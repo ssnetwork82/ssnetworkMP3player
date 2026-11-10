@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern MP3 Player</title>
+    <title>Club Radio</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome Icons -->
@@ -257,23 +257,77 @@
         // Preset Demo Tracks
         const demoPlaylist = [
             {
-                title: "Chill Ambient Synth",
-                artist: "SoundPulse Demo",
-                url: "https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=lofi-study-112191.mp3",
-                art: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=400&auto=format&fit=crop"
+                title: "Curiosity",
+                artist: "Tomas Skyldeberg",
+                url: "https://videotourl.com/audio/1793602506522-bfde6f8c-6b45-4cfa-9e52-8efd03af8be6.mp3",
+                art: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO3OtitikaRtuSjDqijp_3KiA48WowW_sYACEYdEK7LQ&s=10"
             },
             {
-                title: "Midnight Beats",
-                artist: "Lofi Vibes",
-                url: "https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=abstract-fashion-pop-102710.mp3",
-                art: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=400&auto=format&fit=crop"
+                title: "Sunflower",
+                artist: "Post Malone, Swae Lee",
+                url: "https://videotourl.com/audio/1793429819472-d2091940-54b8-452a-9fea-65bf64e345be.mp3",
+                art: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF3I0IlT8-dU33TLVmP1BCGrWA66bSRm2k5t6jjrmAgg&s=10"
             },
             {
-                title: "Atmospheric Horizon",
-                artist: "Acoustic Dreams",
-                url: "https://cdn.pixabay.com/download/audio/2022/11/06/audio_c91a3294c6.mp3?filename=lofi-orchestral-127228.mp3",
-                art: "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?q=80&w=400&auto=format&fit=crop"
-            }
+                title: "Circles",
+                artist: "Post Malone",
+                url: "https://videotourl.com/audio/1793429830874-ec908a6a-504e-4d50-8153-557b87913cad.mp3",
+                art: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF3I0IlT8-dU33TLVmP1BCGrWA66bSRm2k5t6jjrmAgg&s=10"
+            },
+            {
+                title: "Dual Minds",
+                artist: "Tomas Skyldeberg",
+                url: "https://videotourl.com/audio/1793601931775-192e9176-99aa-46f8-8cc0-4e5e22d9e841.mp3",
+                art: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO3OtitikaRtuSjDqijp_3KiA48WowW_sYACEYdEK7LQ&s=10"
+            },
+            {
+                title: "Same Streets",
+                artist: "Austin George",
+                url: "https://videotourl.com/audio/1793429989240-a1e2a2bf-465b-475a-bf78-1e5fe3de5868.mp3",
+                art: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK9H4dD3A1tO0swTto0bFCb94JioTEqJAooF7Z62_YBA&s=10"
+            },
+            {
+                title: "Angel Falls",
+                artist: "Tomas Skyldeberg",
+                url: "https://videotourl.com/audio/1793602667197-375db8ac-3af4-4265-910a-cdac80bb4307.mp3",
+                art: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRvJUWqDB1iK4uwqohFEBLqJGAtMefbYpg15v1FRvSBA&s=10"
+            },
+            {
+                title: "Memories",
+                artist: "Maroon 5",
+                url: "https://videotourl.com/audio/1793431448623-863fa3e9-2e24-4df5-ba9d-b508b08ef01c.mp3",
+                art: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpVQccxOvcGCBVGVHTj_KnLlwyO9h7fENL4TryGQnxDg&s=10"
+            },
+            {
+                title: "Legend of Zelda Ocarina of Time",
+                artist: "Nintendo",
+                url: "https://videotourl.com/audio/1793681726448-3fabc03a-be19-4dfa-9956-8bbec68ffbf6.mp3",
+                art: "https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Breath_of_the_Wild"
+            },
+            {
+                title: "Guest of Honour",
+                artist: "Tomas Skyldeberg",
+                url: "https://videotourl.com/audio/1793602831510-203db5a9-9fad-4bd9-9435-af86ae135ae0.mp3",
+                art: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRvJUWqDB1iK4uwqohFEBLqJGAtMefbYpg15v1FRvSBA&s=10"
+            },
+            {
+                title: "Legend of Zelda Main Theme",
+                artist: "Nitendo",
+                url: "https://videotourl.com/audio/1794291322161-b5e87845-648d-41e9-864f-ce44091159f8.mp3",
+                art: "https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Breath_of_the_Wild"
+            },
+            {
+                title: "Strewn Fields",
+                artist: "Tomas Skyldeberg",
+                url: "https://videotourl.com/audio/1793602569342-f99381ff-eaa1-4ba6-beb7-3129e2494f68.mp3",
+                art: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5EAZkwh3yxNm9fOLly7xULt6vmU-JFz75lQMcgS9l0g&s=10"
+            },
+            {
+                title: "Brother",
+                artist: "DJ Khaled, Post Malone, YoungBoyNBA",
+                url: "https://videotourl.com/audio/1794291796824-fbd67dd3-a7ca-4257-af0e-b30be3940d96.mp3",
+                art: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR641Fms7Vje36YgqHlrDzyT6iD0er1d_h_ThLWTpMT5w&s=10"
+            },
         ];
 
         // UI Element References
